@@ -18,6 +18,7 @@ function setSize () {
 }
 
 function createGrid (size) {
+    
     getGrid.innerHTML = ''
 
     for (let i = 0; i < size * size; i++) {
