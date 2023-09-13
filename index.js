@@ -25,7 +25,7 @@ function createGrid (size) {
         const squares = document.createElement ('div')
         squares.classList.add ('squares');
         squares.addEventListener ('mouseover', () => {
-            rnmCl = `rgb(${random(255)}, ${random(255)}, ${random(255)})`
+            rnmCl = `rgb(${random(255)}, ${random(255)}, ${random(255)})`  //How to change other color ??
             squares.style.backgroundColor = rnmCl
         })
         getGrid.appendChild (squares);
