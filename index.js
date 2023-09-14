@@ -1,6 +1,6 @@
 const getGrid = document.getElementById ('grid');
 const btnRange = document.getElementById ('range');
-const btnClear = document.getElementById ('clear');
+const defaultColor = document.getElementById ('color-picker');
 let valorInical = document.getElementById ('valor-inicial');
 
 
@@ -24,9 +24,9 @@ function createGrid (size) {
     for (let i = 0; i < size * size; i++) {
         const squares = document.createElement ('div')
         squares.classList.add ('squares');
-        squares.addEventListener ('mouseover', () => {
+        squares.addEventListener ('mouseover', (e) => {
             rnmCl = `rgb(${random(255)}, ${random(255)}, ${random(255)})`  //How to change other color ??
-            squares.style.backgroundColor = rnmCl
+            squares.style.backgroundColor = defaultColor.value
         })
         getGrid.appendChild (squares);
     }
